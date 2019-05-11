@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+body {
+  background: url('https://static1.squarespace.com/static/524df78fe4b0b2a8d9f7c12f/53343d66e4b0c39d08e82aa6/53344514e4b01acd1d7ed2b4/1395934497159/marines-desert-marpat.jpg?format=750w');
+  background-position: center center;
+  background-repeat:  no-repeat;
+  background-attachment:fixed;
+  background-size:  cover;
+}
+
+
+
+header {
+    width: 100%;
+    padding: 30px 0;
+    color: #ffffff;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+header::before,
+header::after {
+    display: table;
+    content: '';
+}
+header::after {
+    clear: both;
+}
+.col-4,
+.col-8 {
+    padding-left: 1.04166666%;
+    padding-right: 1.04166666%;
+}
+.emblem {
+  /*flag must be in 1:1.8 ratio*/
+height: 240px;
+width: 432px;
+display: block;
+object-fit: fill;
+margin-left: auto;
+margin-right: auto;
+}
+header ul li {
+    padding: 10px 20px;
+    list-style: none;
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    display: inline;
+}
+header ul {
+    text-align: center;
+    margin-top: 50px
+}
+
+.quizStart {
+display: flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+padding-top: 15px;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: normal;
+    border-style: solid;
+    border-color: black;
+    background: rgb(80, 73, 73);
+}
+button {
+    padding: 20px;
+    border: none;
+    background-color: olivedrab;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: crosshair;
+    transition: all 0.3s ease;
+}
+button:hover, button:focus {
+    background-color: #81613E;
+    color: white;
+}
+main div {
+    margin: 0 auto;
+}
+label:nth-child(1) {
+    background-color: olive;
+}
+label:nth-child(2) {
+    background-color: olive;
+}
+label:nth-child(3) {
+    background-color:  olive;
+}
+label:nth-child(4) {
+    background-color:  olive;
+}
+label {
+    padding: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: crosshair;
+    transition: all 0.3s ease-out;
+    line-height: 22px
+}
+label:hover, label:focus {
+    background-color:  #81613E;
+}
+fieldset {
+    border: none;
+}
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ffffff;
+    transition: 0.2s all linear;
+    outline: none;
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+}
+input:checked {
+    border: 8px solid black;
+}
+input[type=radio] {
+    flex: 0 0 auto;
+    margin-right: 10px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: rgb(80, 73, 73);
+
+}
+form button {
+    padding: 20px;
+    border: none;
+    background-color: rgb(80, 73, 73);
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 0;
+    cursor: crosshair;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    width: 100%;
+    text-align: left;
+}
+form button:hover, form button:focus {
+    background-color: white;
+    color: rgb(80, 73, 73)
+}
+.answer {
+    flex: 1 1 auto;
+}
+.questionAnswerForm {
+    display: none;
+    width: 50%;
+}
+.col-8 ul li{
+  font-size: 25px;
+}
+.correctFeedback {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    background: linear-gradient(to bottom, #81613E 0%, olivedrab 100%);
+    padding-top: 40px
+}
+.correctFeedback button {
+    width: 100%
+}
+.correctFeedback p {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    margin-left: 20px;
+    margin-right: 20px
+}
+.correctFeedback span {
+    color: black;
+}
+.correctFeedback img {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    border-radius: 50%;
+    background-color: rgb(80, 73, 73);
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 20px
+}
+h3 {
+    color: black;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.results img {
+    width: 200px;
+    height: 200px;
+}
+.results p:first-of-type {
+    font-size: 25px;
+    margin-bottom: 10px
+}
+.results p {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 0
+}
+.restartButton {
+    margin-top: 40px
+}
+
+@media screen and (max-width: 1190px) {
+    .questionAnswerForm,
+    .quizStart {
+        width: 80%;
+        margin-bottom: 100px
+    }
+
+     .emblem {
+  /*flag must be in 1:1.8 ratio*/
+  height: 240px;
+  width: 432px;
+  display: block;
+  object-fit: fill;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+}
+@media screen and (max-width: 768px) {
+  header ul {
+        margin: 10px;
+        text-align: center;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    header ul li {
+        padding: 10px;
+        font-size: 18px;
+    }
+    .col-4,
+    .col-8 {
+        width: 100%;
+    }
+    .quizStart {
+        width: 100%;
+        padding: 40px;
+        margin-top: 0;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    .questionAnswerForm {
+        width: 100%;
+        padding: 20px;
+        margin-top: 0;
+    }
+    label {
+        font-size: 16px;
+        padding: 15px;
+    }
+    .correctFeedback img {
+        width: 200px;
+        height: auto;
+    }
+    .correctFeedback p {
+        font-size: 16px;
+        margin: 0 15px;
+    }
+    .results p:first-of-type {
+        font-size: 18px;
+    }
+    h3 {
+        font-size: 25px;
+    }
+}
